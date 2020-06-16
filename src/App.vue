@@ -1,0 +1,68 @@
+<template>
+	<div id="app">
+		<transition name="fade"
+		            mode="out-in">
+			<router-view></router-view>
+		</transition>
+	</div>
+</template>
+
+<script>
+export default {
+	name: 'app',
+	components: {
+	}
+}
+
+</script>
+
+<style>
+	@import url('../static/css/reset.css');
+	/* 全局样式 */
+	html,
+	body,
+	#app {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 1366px;
+	}
+
+	.fa{
+		margin-right: 10px;
+	}
+	.el-breadcrumb {
+		margin-bottom: 15px;
+		font-size: 12px;
+	}
+
+	.el-card {
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+	}
+
+	.el-table {
+		margin-top: 15px;
+		font-size: 12px;
+	}
+
+	.el-pagination {
+		margin-top: 15px;
+	}
+
+	/* 解决级联选择框的问题 */
+	div .el-scrollbar__wrap {
+		height: 300px !important
+	}
+
+	/* 步骤条 */
+	.el-steps {
+		margin: 15px 0;
+	}
+
+	.el-step__title {
+		font-size: 13px;
+	}
+	.ql-editor{
+		min-height: 300px;
+	}
+</style>
