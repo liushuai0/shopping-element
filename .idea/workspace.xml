@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="031adf61-ae8f-4ca4-8a40-d0afa7b03ff4" name="默认更改列表" comment="" />
+    <list default="true" id="031adf61-ae8f-4ca4-8a40-d0afa7b03ff4" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/src/views/goods/listAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/goods/listAdd.vue" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +17,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZTFCaSCeQfAq810Srf98zH67RQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -83,11 +89,22 @@
       <workItem from="1591888342722" duration="217000" />
       <workItem from="1592110299665" duration="2643000" />
       <workItem from="1592228687380" duration="4051000" />
-      <workItem from="1592313696886" duration="3224000" />
+      <workItem from="1592313696886" duration="3553000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

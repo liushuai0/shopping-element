@@ -116,6 +116,7 @@
         methods:{
             tabClicked(){
                 console.log("1232")
+                console.log("123")
             },
             async getCateList(){
                 var params={
