@@ -113,7 +113,7 @@
         },
         methods:{
             async getJueSeList(){
-                let _result=await reqJueSeList()
+                let _result = await reqJueSeList();
 
                  this.$nextTick(function () {
                     this.jueSeList=_result.data
@@ -122,15 +122,15 @@
 
             },
             addJueSe(){
-                this.dialogStatus='0'
+                this.dialogStatus = '0';
                 this.dialogEditVisible=true
             },
             async handleEdit(index,row){
-                this.dialogStatus='1'
+                this.dialogStatus = '1';
                 this.dialogEditVisible = true;//放在第一个   this.$nextTick 可以在下次打开的时候重置表单数据
-                console.log(row)
-                const _result= await queryJueSeById(row.id)
-                console.log(_result)
+                console.log(row);
+                const _result = await queryJueSeById(row.id);
+                console.log(_result);
 
                 if (_result.meta.status !== 200) {
                     return this.$message.error('查询角色失败！')
@@ -141,19 +141,19 @@
             },
             async editSave(){
                 if(this.dialogStatus==='0'){
-                    const _result= await addJueSe(this.editJueSeList)
+                    const _result = await addJueSe(this.editJueSeList);
                     if (_result.meta.status !== 201) {
                         return this.$message.error('添加角色失败！')
                     }
                     this.$message.success("添加用户成功")
                 }else if(this.dialogStatus==='1'){
-                    const _result= await editJueSe(this.editJueSeList)
+                    const _result = await editJueSe(this.editJueSeList);
                     if (_result.meta.status !== 200) {
                         return this.$message.error('编辑角色失败！')
                     }
                     this.$message.success("编辑用户成功")
                 }
-                this.dialogEditVisible=false
+                this.dialogEditVisible = false;
                 this.getJueSeList()
             },
             async handleDel(index,row){
@@ -167,15 +167,15 @@
                 if (confirmResult !== 'confirm') {
                     return  this.$message.info('已取消删除')
                 }
-                const _result= await delJueSe(row.id)
+                const _result = await delJueSe(row.id);
                 if (_result.meta.status !== 200) {
                     return this.$message.error('删除角色失败！')
                 }
-                this.$message.success("删除用户成功")
+                this.$message.success("删除用户成功");
                 this.getJueSeList()
             },
             async allotRights(){
-                console.log(this)
+                console.log(this);
                 // var checkIdList=this.$refs.treeRef.getCheckedKeys()
                 // var harfCheckIdList =this.$refs.treeRef.getHalfCheckedKeys()
                 // checkIdList=checkIdList.concat(harfCheckIdList)
@@ -186,45 +186,38 @@
                 var checkIdList = [
                     ...this.$refs.treeRef.getCheckedKeys(),
                     ...this.$refs.treeRef.getHalfCheckedKeys()
-                ]
+                ];
 
-                console.log(checkIdList)
-                checkIdList=checkIdList.join(',')
-                var _result= await savePms(this.roleId,checkIdList)
-                console.log(_result)
+                console.log(checkIdList);
+                checkIdList = checkIdList.join(',');
+                var _result = await savePms(this.roleId, checkIdList);
+                console.log(_result);
                 if (_result.meta.status !== 200) {
                     return this.$message.error('角色授权失败！')
                 }
-                this.$message.success("角色授权成功")
+                this.$message.success("角色授权成功");
 
                 this.dialogFenPeiVisible=false
             },
             //分配权限点击
-            async handlePms(row){
-                console.log(row)
-                console.log("dakaile ")
-                console.log(this.quanxianTree)
-                this.roleId=row.id
-                const _result= await reqQuanXianTree('tree')
+            handlePms: async function (row) {
+                console.log(row);
+                console.log("dakaile ");
+                console.log(this.quanxianTree);
+                this.roleId = row.id;
+                const _result = await reqQuanXianTree('tree');
                 if (_result.meta.status !== 200) {
                     return this.$message.error('获取权限树失败！')
                 }
-                console.log(_result)
+                console.log(_result);
 
 
-                    this.quanxianTree=_result.data
-                    //   递归获取三级节点的id
-                    this.getLeafkeys(row, this.defaultCheckdArr)
+                this.quanxianTree = _result.data;
+                //   递归获取三级节点的id
+                this.getLeafkeys(row, this.defaultCheckdArr);
 
 
-
-
-
-
-
-
-
-                this.dialogFenPeiVisible=true
+                this.dialogFenPeiVisible = true
 
             },
             // 通过递归 获取角色下三级权限的 id, 并保存到defKeys数组
@@ -237,10 +230,10 @@
             },
             // 权限对话框关闭事件
             setRightDialogClosed () {
-                console.log("guanbile ")
+                console.log("guanbile ");
 
-                this.quanxianTree = []
-                this.defaultCheckdArr=[]
+                this.quanxianTree = [];
+                this.defaultCheckdArr = [];
                 this.getJueSeList()
             },
         }

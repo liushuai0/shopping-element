@@ -9,16 +9,18 @@ import Vue from 'vue'
 
 var that=Vue.prototype
 // // 远程后台地址
-//  axios.defaults.baseURL = 'https://www.liulongbin.top:8888/api/private/v1/'
+export const baseURL = 'http://localhost:8888/api/private/v1/'
 
 
-export const baseURL = 'https://www.liulongbin.top:8888/api/private/v1';
+//export const baseURL = 'https://www.liulongbin.top:8888/api/private/v1';
 
 // export const requestLogin = params => ajax(base + '/login',params,'POST')
 
 export const requestLogin = params =>{return that.postAxios('/login', params)}
-
-
+//获取左侧菜单
+export const getMenuList = () => {
+    return that.getAxios('/menus')
+};
 //获取用户列表
 export const reqUserList = params => { return that.getAxios('/users', params)};
 //修改用户状态
@@ -41,6 +43,11 @@ export const queryJueSeById = params => { return that.getAxios(`/roles/${params}
 export const editJueSe = params => { return that.putAxios(`/roles/${params.roleId}`,{roleName:params.roleName,roleDesc:params.roleDesc})};
 //删除角色
 export const delJueSe = params => { return that.deleteAxios(`/roles/${params}`)};
+//編輯提交角色
+export const updateRoleInfo = params => {
+    return that.putAxios(`/users/${params.id}/role`, {rid: params.rid})
+};
+
 
 
 //获取权限
@@ -61,7 +68,30 @@ export const addShopList = params => { return that.postAxios('/goods',params)};
 //获取商品分类列表
 export const getGoodsList = params => { return that.getAxios('/categories',params)};
 
+//编辑提交商品
+export const editShopList = (params) => {
+    return that.putAxios(`/goods/${params.id}`, params)
+};
 
+// 根据 ID 查询商品
+export const getShopListById = params => {
+    return that.getAxios(`/goods/${params}`)
+};
+
+//订单数据列表
+export const getOrderList = params => {
+    return that.getAxios('/orders', params)
+};
+
+//查看订单详情
+export const getOrderInfo = params => {
+    return that.getAxios(`/orders/${params}`)
+};
+
+//查看订单详情
+export const getOrderLogistics = params => {
+    return that.getAxios(`/kuaidi/${params}`)
+};
 
 
 export const getUserListPage = params => { return ajax(`${base}/user/listpage`, { params: params }); };

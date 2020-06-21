@@ -31,13 +31,11 @@
                                         v-model="addForm.goods_cat"
                                         :options="cateList"
                                         :props="cascaderProps"
+                                        style="width: 100%;"
                                         @change="handleChange">
 
                                 </el-cascader>
-
-
                             </el-form-item>
-
                         </el-form>
                     </el-tab-pane>
                     <el-tab-pane label="商品参数">商品参数</el-tab-pane>
@@ -103,8 +101,9 @@
                     goods_introduce: [
                         { required: true, message: '请至少选择一个活动性质', trigger: 'change' }
                     ],
+                },
 
-                }
+
             }
         },
         mounted() {
@@ -144,7 +143,8 @@
             },
             handleChange(value){
                 console.log(value)
-            }
+            },
+
         }
     }
 </script>

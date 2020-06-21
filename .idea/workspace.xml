@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="031adf61-ae8f-4ca4-8a40-d0afa7b03ff4" name="默认更改列表" comment="">
+    <list default="true" id="031adf61-ae8f-4ca4-8a40-d0afa7b03ff4" name="默认更改列表" comment="这是第二次修改的">
+      <change afterPath="$PROJECT_DIR$/src/components/Welcome/Welcome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/order/citydata.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/goods/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/goods/list.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/goods/listAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/goods/listAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/order/orderList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/order/orderList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/permission/perUser.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/permission/perUser.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/user/userManager.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/user/userManager.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +31,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="LS &lt;1145130652@qq.com&gt;" />
         <option value="刘帅" />
       </list>
     </option>
@@ -28,15 +39,19 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1ZTFCaSCeQfAq810Srf98zH67RQ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="更新" />
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Git/cmd/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views/order" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\11596\Desktop\vue项目\gitAdmin\vue-admin-master\src\views\order" />
       <recent name="C:\Users\11596\Desktop\vue项目\gitAdmin\vue-admin-master" />
       <recent name="C:\Users\11596\Desktop\vue项目\gitAdmin\vue-admin-master\static" />
       <recent name="C:\Users\11596\Desktop\vue项目\gitAdmin\vue-admin-master\src\assets\css" />
@@ -97,8 +112,28 @@
       <workItem from="1591888342722" duration="217000" />
       <workItem from="1592110299665" duration="2643000" />
       <workItem from="1592228687380" duration="4051000" />
-      <workItem from="1592313696886" duration="3757000" />
+      <workItem from="1592313696886" duration="4611000" />
+      <workItem from="1592401657104" duration="8777000" />
+      <workItem from="1592488535643" duration="6205000" />
+      <workItem from="1592616654104" duration="5036000" />
+      <workItem from="1592624591891" duration="3549000" />
+      <workItem from="1592707168162" duration="4259000" />
     </task>
+    <task id="LOCAL-00001" summary="这是第二次修改的">
+      <created>1592320789600</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592320789600</updated>
+    </task>
+    <task id="LOCAL-00002" summary="这是第二次修改的">
+      <created>1592320831258</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592320831258</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,10 +144,17 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="这是第二次修改的" />
+    <option name="LAST_COMMIT_MESSAGE" value="这是第二次修改的" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
