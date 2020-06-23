@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="031adf61-ae8f-4ca4-8a40-d0afa7b03ff4" name="默认更改列表" comment="这是第二次修改的">
-      <change afterPath="$PROJECT_DIR$/src/components/Welcome/Welcome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/order/citydata.js" afterDir="false" />
+    <list default="true" id="031adf61-ae8f-4ca4-8a40-d0afa7b03ff4" name="默认更改列表" comment="动态菜单配置完了 基本全完成">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/goods/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/goods/list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/goods/listAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/goods/listAdd.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/order/orderList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/order/orderList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/permission/perUser.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/permission/perUser.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/user/userManager.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/user/userManager.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +36,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views/order" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -117,7 +106,9 @@
       <workItem from="1592488535643" duration="6205000" />
       <workItem from="1592616654104" duration="5036000" />
       <workItem from="1592624591891" duration="3549000" />
-      <workItem from="1592707168162" duration="4259000" />
+      <workItem from="1592707168162" duration="5637000" />
+      <workItem from="1592716935884" duration="1000" />
+      <workItem from="1592920181361" duration="287000" />
     </task>
     <task id="LOCAL-00001" summary="这是第二次修改的">
       <created>1592320789600</created>
@@ -133,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592320831258</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="动态菜单配置完了 基本全完成">
+      <created>1592714093951</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592714093951</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +152,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="这是第二次修改的" />
-    <option name="LAST_COMMIT_MESSAGE" value="这是第二次修改的" />
+    <MESSAGE value="动态菜单配置完了 基本全完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="动态菜单配置完了 基本全完成" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
